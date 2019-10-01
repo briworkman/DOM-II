@@ -58,3 +58,13 @@ document.querySelectorAll(".btn").forEach(element => {
     element.style.transition = "all 0.3s";
   });
 });
+
+TweenMax.to(".img-content", 1, {
+  rotation: 360,
+  ease: Elastic.easeOut.config(1, 0.75)
+});
+
+TweenMax.to(".text-content", 1, {
+  rotation: -360,
+  ease: Elastic.easeOut.config(1, 0.75)
+});
